@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to DocSpot</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .link-buttons a {
+      text-decoration: none;
+      padding: 8px 12px;
+      background-color: #28a745;
+      color: white;
+      margin: 5px;
+      display: inline-block;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to DocSpot</h2>
+    <p>Your seamless healthcare appointment booking system.</p>
+    <h3>Register</h3>
+    <input type="text" placeholder="Name" />
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button>Register</button>
+
+    <h3>Login</h3>
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <button>Login</button>
+
+    <h4>Or Visit a Dashboard Directly</h4>
+    <div class="link-buttons">
+      <a href="user.html">User Dashboard</a>
+      <a href="doctor.html">Doctor Dashboard</a>
+      <a href="admin.html">Admin Dashboard</a>
+    </div>
+  </div>
+</body>
+</html>

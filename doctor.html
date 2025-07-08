@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Dashboard</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; display: flex; background: #f4f4f4; }
+    .sidebar {
+      width: 200px; background: #2f3e46; color: white; height: 100vh; padding: 20px; position: fixed;
+    }
+    .sidebar h2 { margin-bottom: 30px; }
+    .sidebar ul { list-style: none; padding: 0; }
+    .sidebar ul li { padding: 12px 0; cursor: pointer; }
+    .sidebar ul li:hover { background: #354f52; padding-left: 10px; }
+    .main-content {
+      margin-left: 220px; padding: 30px; width: 100%;
+    }
+    .card {
+      background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background: #eee; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>DocSpot</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Appointments</li>
+      <li>Logout</li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <h1>Doctor Dashboard</h1>
+    <div class="card">
+      <h3>Upcoming Appointments</h3>
+      <table>
+        <tr><th>Patient</th><th>Date</th><th>Time</th><th>Action</th></tr>
+        <tr><td>John Doe</td><td>2025-07-02</td><td>10:00 AM</td><td><button>Confirm</button></td></tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

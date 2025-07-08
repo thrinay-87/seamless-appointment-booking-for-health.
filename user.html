@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Dashboard</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; display: flex; background-color: #f9f9f9; }
+    .sidebar {
+      width: 200px; background-color: #343a40; color: white; height: 100vh; padding: 20px; position: fixed;
+    }
+    .sidebar h2 { margin-bottom: 30px; }
+    .sidebar ul { list-style: none; padding: 0; }
+    .sidebar ul li { padding: 12px 0; cursor: pointer; }
+    .sidebar ul li:hover { background-color: #495057; padding-left: 10px; transition: 0.3s; }
+    .main-content {
+      margin-left: 220px; padding: 30px; width: 100%;
+    }
+    .doctor-card {
+      background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 400px;
+    }
+    button {
+      background-color: #007bff; color: white; border: none; padding: 10px;
+      border-radius: 5px; cursor: pointer;
+    }
+    button:hover { background-color: #0056b3; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Book A Doctor</h2>
+    <ul>
+      <li>Home</li>
+      <li>Appointments</li>
+      <li>Logout</li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <h1>User Dashboard</h1>
+    <div class="doctor-card">
+      <h3>Dr. Karthick</h3>
+      <p>Specialist: Cardiologist</p>
+      <p>Experience: 10 years</p>
+      <p>Location: Hyderabad</p>
+      <p>Fee: ₹500</p>
+      <button>Book Now</button>
+    </div>
+  </div>
+</body>
+</html>

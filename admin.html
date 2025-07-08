@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; display: flex; background: #f0f0f0; }
+    .sidebar {
+      width: 200px; background: #3a3d41; color: white; height: 100vh; padding: 20px; position: fixed;
+    }
+    .sidebar h2 { margin-bottom: 30px; }
+    .sidebar ul { list-style: none; padding: 0; }
+    .sidebar ul li { padding: 12px 0; cursor: pointer; }
+    .sidebar ul li:hover { background: #505457; padding-left: 10px; }
+    .main-content {
+      margin-left: 220px; padding: 30px; width: 100%;
+    }
+    table {
+      width: 100%; border-collapse: collapse; background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+    th { background: #e2e8f0; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>MediCareBook</h2>
+    <ul>
+      <li>Users</li>
+      <li>Doctors</li>
+      <li>Logout</li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <h1>Hi, Admin</h1>
+    <h2>All Appointments for Admin Panel</h2>
+    <table>
+      <tr><th>Appointment ID</th><th>User Name</th><th>Doctor Name</th><th>Date</th><th>Status</th></tr>
+      <tr><td>#A001</td><td>Ali Khan</td><td>Dr. Roushan</td><td>2025-07-02</td><td>approved</td></tr>
+    </table>
+  </div>
+</body>
+</html>
